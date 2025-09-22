@@ -2,7 +2,7 @@ from math import sqrt
 
 N = 100
 nb = 0
-while nb < 6:  
+while nb < 6 and N < 999:  
     N += 1
     ch = str(N)
     p1 = int(ch[0])
