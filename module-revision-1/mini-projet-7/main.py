@@ -11,7 +11,7 @@ def somme_racine(x1, x2):
 
 def puissance(x1, x2):
     r = 1
-    for _ in range(x2):
+    for i in range(x2):
         r = r * x1
     return r
 
