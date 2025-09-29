@@ -16,5 +16,8 @@ def supprimer_espace(ch: str):
         ch1 = ch
     return ch1
 
+def calculer_montant():
+    pass
+
 ch = saisir_texte()
 print(supprimer_espace(ch))
