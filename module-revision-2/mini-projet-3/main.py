@@ -16,8 +16,14 @@ def supprimer_espace(ch: str):
         ch1 = ch
     return ch1
 
-def calculer_montant():
-    pass
+def calculer_montant(ch: str):
+    nb = 0
+    for c in ch:
+        if c == " ":
+            nb += 1
+    return nb * 0.75
 
 ch = saisir_texte()
-print(supprimer_espace(ch))
+ch = supprimer_espace(ch)
+ct = calculer_montant(ch)
+print(f"Le coût de {ch} est {ct}")
