@@ -14,6 +14,8 @@ def transformation(ch):
             ch1 += lower(ch[i])
         elif "a" <= ch[i] <= "z":
             ch1 += ch[i].upper()
+        else:
+            ch1 += ch[i]
     return ch1
 
 ch = saisir_chaine()
