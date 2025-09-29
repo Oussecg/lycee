@@ -6,7 +6,7 @@ def saisir_chaine():
 
 def saisir_caractere():
     c = input("Saisir un caractére: ")
-    while not("A" <= c.upper() <= "Z"):
+    while not(len(c) == 1 and "A" <= c.upper() <= "Z"):
         c = input("Retaper un caractére: ")
     return c
 
