@@ -6,12 +6,11 @@ def nombre_eleve():
         x = int(input("Donner le nombre d'élèves: "))
     return x
 
-def remplir_tableau(t, N):
+def remplir_tableau(N):
     for i in range(N):
-        t[i] = float(input("Moyenne de l'élève", i + 1, ":"))
+        t[i] = float(input("Moyenne de l'élève " + str(i + 1) + " : "))
         while not (0 <= t[i] <= 20):
-            t[i] = float(input("Moyenne de l'élève", i + 1, ":"))
-    return t
+            t[i] = float(input("Moyenne de l'élève " + str(i + 1) + " : "))
 
 def moyen_generale(t, n):
     mg = 0
@@ -22,6 +21,7 @@ def moyen_generale(t, n):
         
 N = nombre_eleve()
 t = array([int] * N)
+remplir_tableau(N)
 Mg = moyen_generale(t, N)
 # Ne = nombre_superieur(t, N, Mg)
 # My = max_moyen(t, N)
