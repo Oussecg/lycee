@@ -12,14 +12,15 @@ def remplir_tableau(t, n:int):
         t[i] = randint(10, 99)
 
 def inverse_tableau(t, n):
-    t1 = array([int] * n)
-    for i in range(n):
-        t1[i] = t[(n -1) - i]
-    return t1
+    for i in range(n // 2):
+        j = n - i - 1
+        x = t[i]
+        t[i] = t[j]
+        t[j] = x
 
 N = nombre_cases()
 t = array([int] * N)
 remplir_tableau(t, N)
-t1 = inverse_tableau(t, N)
 print("Tableau 1:", t)
-print("Tableau 2:", t1) 
+inverse_tableau(t, N)
+print("Tableau 2:", t) 
