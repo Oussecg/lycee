@@ -20,18 +20,18 @@ def saisir_entier():
 
 def saisir_position(n):
     x = int(input("Saisir le position: "))
-    while not ( 0 <= x <= n-2):
+    while not ( 0 <= x <= n-2 ):
         x = int(input("Saisir un entier: "))
     return x
 
-def insertion_entier(t, n, p, e):
+çàdef insertion_entier(t, n, p, e):
     x = t[p]
     t[p] = e
     for i in range(p+1, n):
         c = t[i]
         t[i] = x
         x = c
-        
+
 N = saisir_cases()
 T = array([int] * N)
 remplir_tableau(T, N)
