@@ -1,0 +1,12 @@
+* {
+  font-style: initial;
+}
+
+a {
+  font-family: "Courier New", Courier, monospace;
+  color: blue;
+}
+
+li {
+  text-shadow: black 0 0 2px;
+}
