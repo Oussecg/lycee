@@ -2,6 +2,10 @@
   font-style: initial;
 }
 
+h2{
+  color: red;
+}
+
 a {
   font-family: "Courier New", Courier, monospace;
   color: blue;

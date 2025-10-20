@@ -11,7 +11,7 @@ def remplir_tableau(t, n):
         t[i] = int(input("T["+str(i)+"]= "))
         while not (t[i] > 0):
             t[i] = int(input("T["+str(i)+"]= "))
-    
+
 def saisir_entier():
     x = int(input("Saisir un entier: "))
     while x < 0:
@@ -24,7 +24,7 @@ def saisir_position(n):
         x = int(input("Saisir un entier: "))
     return x
 
-çàdef insertion_entier(t, n, p, e):
+def insertion_entier(t, n, p, e):
     x = t[p]
     t[p] = e
     for i in range(p+1, n):
