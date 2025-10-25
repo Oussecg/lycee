@@ -6,9 +6,39 @@ h2{
   color: red;
 }
 
+p{
+  background-color: yellow;
+  color: red;
+}
+
 a {
   font-family: "Courier New", Courier, monospace;
   color: blue;
+  padding: 0 5px;
+  border-radius: 30px;
+}
+
+table{
+  margin-bottom: 20px;
+}
+
+.internal-link{
+  color: white;
+  border: 3px dotted white;
+  transition: all 1s;
+}
+#bas{
+  background-color: blue;
+}
+
+#haut{
+  background-color: red;
+}
+
+.internal-link:hover{
+  color: red !important;
+  background-color: black !important;
+  padding: 2px 8px !important;
 }
 
 li {
