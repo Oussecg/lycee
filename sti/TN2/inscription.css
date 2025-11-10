@@ -1,0 +1,21 @@
+legend{
+  color: blueviolet;
+  font-weight: bold;
+  font-style: italic;
+}
+
+div{
+  margin-bottom: 5px;
+}
+
+.path-labels{
+  display: inline-block;
+  font-weight: bold;
+  text-align: right;
+  width: 15%;
+}
+
+input, textarea{
+  color: blue;
+  border-color: blue;
+}
