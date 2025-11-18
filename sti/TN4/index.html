@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <form action="">
+      <h1>Inscription</h1>
+      <fieldset>
+        <legend>Info Générale</legend>
+        <div>
+          <label for="Nom&Prenom">Nom & Prénom</label
+          ><input type="text" for="Nom&Prenom" maxlength="25" required />
+        </div>
+
+        <div>
+          <label for="CIN">CIN</label
+          ><input type="number" for="CIN" min="10000000" max="99999999" />
+        </div>
+
+        <div>
+          <label for="dateNaissance">Date de Naissance</label
+          ><input type="date" for="dateNaissance" />
+        </div>
+
+        <div>
+          <label for="Email">E-mail</label
+          ><input
+            type="text"
+            for="Email"
+            required
+            placeholder="exemple@domain.com"
+          />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Vos choix</legend>
+        <div>
+          <label for="nombrePiece">Nombre de piece</label>
+          <input
+            type="range"
+            value="1"
+            min="0"
+            max="4"
+            step="1"
+            id="nombrePiece"
+          />
+        </div>
+
+        <div>
+          <label for="nÉtage">Nombre d’étage</label>
+          <select name="nÉtage" id="nÉtage">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+
+        <div>
+          <input type="checkbox" id="parkingSol" />
+          <label for="parkingSol">Parking sous sol</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="domestique" checked />
+          <label for="domestique">Domestique</label>
+        </div>
+      </fieldset>
+      <button type="submit"><img src="assets/images/right-arrow.svg" alt="Submit" height="12" width="50"></button>
+      <input type="reset" value="Annuler">
+    </form>
+  </body>
+</html>

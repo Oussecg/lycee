@@ -1,0 +1,31 @@
+*{
+  transition: all 1s;
+}
+
+body{
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p{
+  background-color: red;
+  padding: 2px 10px;
+  border-radius: 10px;
+  text-align: center;
+  border: 3px dashed black;
+}
+
+
+#p1:hover{
+  transform: skew(45deg, 0deg);
+}
+
+#p2:hover{
+  transform: skew(0deg, 45deg);
+}
+
+#p3:hover{
+  transform: skew(45deg, 45deg);
+}
