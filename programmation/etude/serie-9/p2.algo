@@ -1,0 +1,78 @@
+saisir(N)
+Nb <-- N div N
+P <-- aléa(0, 3)
+remplir(T, N)
+trier(T, N, P)
+afficher(T, Nb, P)
+
+procédure saisir(@N: entier)
+début
+  répéter
+    écrire("Saisir N: ")
+    lire(N)
+  jusqu'à  6 ≤ N ≤ 99 et N mod 3 = 0
+fin
+
+procédure remplir(@T: tab, N: entier)
+début
+  pour i de 0 à N-1 faire
+    répéter
+      écrire("Nom n°", i, ": ")
+      lire(T[i])
+    jusqu'à  long(T[i]) <= 4 et est_alpha(T[i]) et est_distant(T[i], i)
+  fin_pour
+fin
+
+fonction est_alpha(ch: chaîne) : booléen
+début
+  i <-- 0
+  tant que i < long(ch) et "A" ≤ ch[i] ≤ "Z" faire
+    i <-- i + 1
+  fin_tant_que
+
+  retourner i = long(ch)
+fin
+
+fonction est_distant(T: tab, N: entier) : entier
+début
+  test <-- vrai
+  i <-- 0
+  répéter
+    si T[i] == T[i+1] alors
+      test <-- faux
+    sinon
+      i <-- i + 1
+    fin_si
+  jusqu'à i > N - 1 ou test == faux
+fin
+
+procédure trier(@T:tab, N:entier, p:entier)
+début
+  répéter
+    b <-- vrai
+    i <-- 0
+    pour i de 0 à N-2 faire
+      c1 <-- T[i][p]
+      c2 <-- T[i + 1][p]
+      s1 <-- ord(c1) mod 10 + ord(c1) div 10
+      s2 <-- ord(c2) mod 10 + ord(c2) div 10
+
+      si s2 > s1 alors
+        aux <-- T[i]
+        T[i] <-- T[i + 1]
+        T[i + 1] <-- aux
+        b <- vrai
+      fin_si
+      N <-- N - 1
+    fin_pour
+  jusqu'à b ou N = 1
+fin
+
+procédure afficher(T, N, p)
+début
+  écrire("Si P = ", p, "les clients gagnants sont:")
+  pour i de 0 à N-1 faire
+    écrire(T[i])
+  fin_pour
+fin
+
