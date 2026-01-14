@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    q = Number(prompt("Quantité de huile: "))
+    m1 = q / 20
+    m1 = parseInt(m1)
+    m2 = (q % 20) / 5
+    m2 = parseInt(m2)
+    m3 = (q % 20) % 5
+    document.write(`<p style='color: red;'>${m1} Boisson de 20L`)
+    document.write(`<p style='color: green;'>${m2} Boisson de 5L`)
+    document.write(`<p style='color: blue;'>${m3} Boisson de 1L`)
+
+  </script>
+</body>
+</html>

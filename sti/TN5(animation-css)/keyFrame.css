@@ -1,0 +1,16 @@
+@keyframes translate {
+  0%{
+    transform: translate(100%, 0);
+  }
+  100%{
+    transform: translate(0, 0);
+  }
+}
+
+h1{
+  animation-name: translate;
+  animation-duration: 7s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.25, 0.1, 1, 0.19);
+}

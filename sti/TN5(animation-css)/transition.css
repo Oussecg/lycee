@@ -1,0 +1,49 @@
+div {
+  background-color: cyan;
+  height: 300px;
+  width: 400px;
+  margin-bottom: 100px;
+}
+
+.v1 {
+  transition-duration: 2s;
+  transition-delay: 200ms;
+  transition-property: all;
+  position: relative;
+}
+
+.v1:hover {
+  width: 500px;
+  height: 400px;
+  color: white;
+  background-color: red;
+  border: 2px solid red;
+  transform: rotate(360deg);
+}
+
+.v1 span {
+  transition-duration: 2s;
+  transition-delay: 200ms;
+  transition-property: all;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.v1:hover span {
+  transform: translate(100%, 100%);
+}
+
+.v2 {
+  transition-duration: 2s;
+  transition-delay: 200ms;
+  transition-property: background-color, width;
+}
+
+.v2:hover {
+  width: 500px;
+  height: 400px;
+  color: white;
+  background-color: red;
+  border: 2px solid red;
+}
