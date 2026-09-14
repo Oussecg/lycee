@@ -1,0 +1,27 @@
+div{
+   
+    width: 500px;
+}
+label{
+    display:inline-block;
+    margin: 5px;
+    width: 25%;
+    color: blue;
+}
+#lb{
+     display:inline-block;
+     margin-bottom: 15px;
+    width: 8%;
+}
+
+fieldset
+{
+    width:30%;
+}
+h1{
+ margin-left: 10%;
+ margin-bottom: -10px;
+}
+#bt{
+    margin-left:4% ;
+}

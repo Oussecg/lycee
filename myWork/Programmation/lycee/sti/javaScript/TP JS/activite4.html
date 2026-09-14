@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+</body>
+  <h2>Que peut faire JavaScript?</h2>
+  <p id="p1">Peut Changer le continu d'un élément HTML</p>
+  <input type="button" value="Cliquer Ici" id="bt">
+<body>
+<script>
+  document.getElementById("bt").addEventListener("mouseover", () => {
+    document.getElementById('p1').style = "width: fit-content; background-color: black; font-size: 20px; color: yellow;";
+  })
+
+  document.getElementById("bt").addEventListener("mouseout", () => {
+    document.getElementById('p1').style = "background-color: white; font-size: 16px; color: black;";
+  })
+
+  document.getElementById("bt").addEventListener("click", () => {
+    document.getElementById('p1').innerHTML = "Bienvenu";
+  })
+</script>
+</html>

@@ -1,0 +1,73 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  background-color: brown;
+  padding: 10px;
+  padding-left: 30px;
+}
+
+form{
+  padding: 20px 50px;
+}
+
+.secondary-container{
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.flex-container{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.flex-container-fix{
+  align-items: end;
+}
+
+label{
+  display: block;
+}
+
+.inline-container{
+  display: inline-block;
+  width: 100%;
+}
+
+input{
+  background-color: gainsboro;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 100%;
+  height: 43px;
+  font-size: 15px;
+}
+
+#saveButton{
+  padding: 10px 20px;
+  background-color: orangered;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  height: 43px;
+}
+
+#continueButton{
+  padding: 10px 20px;
+  height: 43px;
+  background-color: white;
+  border: 1px solid orangered;
+  color: orangered;
+  border-radius: 8px;
+}
+
+#password{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      margin-bottom: 5px;
+    }
+  </style>
+  <script src="tp1.js"></script>
+</head>
+<body onload="alert('Bnj')">
+  <fieldset>
+    <legend>Tp Événement</legend>
+
+    <div>
+      <label for="">Nom</label>
+      <input type="text" name="" id="nom" onfocus="inputStyle('nom', 'background-color: red;')" onblur="inputStyle('nom', 'background-color: white;')">
+    </div>
+
+    <div>
+      <label for="">Prénom</label>
+      <input type="text" name="" id="prm" onblur="inputStyle('prm', 'text-transform: uppercase;')">
+    </div>
+
+    <div>
+      <label for="">Niveau</label>
+      <select name="" id="niv" onchange="changeSelect('niv')">
+        <option>Primaire</option>
+        <option>Secondaire</option>
+        <option>Universitaire</option>
+      </select>
+    </div>
+  </fieldset>
+
+  <p id="p"></p>
+</body>
+</html>

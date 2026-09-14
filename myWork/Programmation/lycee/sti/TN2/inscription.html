@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="inscription.css">
+  </head>
+  <body>
+    <h1>Inscription</h1>
+    <form action="valide.html">
+      <fieldset>
+        <legend>Donnés de connection</legend>
+        <div>
+          <label for="email" class="path-labels">mail:</label>
+          <input type="email" name="email" id="email" required/>
+        </div>
+        <div>
+          <label for="password" class="path-labels">mot de passe:</label>
+          <input type="password" name="password" id="password" minlength="3" required/>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Donnés personnelles</legend>
+        <div>
+          <label for="prenom" class="path-labels">Prénom:</label>
+          <input type="text" name="" id="prenom" />
+        </div>
+
+        <div >
+          <label for="nom" class="path-labels">Nom:</label>
+          <input type="text" name="" id="nom">
+        </div>
+        <div >
+          <label class="path-labels">Homme ou Femme?</label>
+          <input type="radio" name="gendre">
+          <label>Homme</label>
+          <input type="radio" name="gendre">
+          <label>Femme</label>
+        </div>
+
+        <div>
+          <label class="path-labels">Logement:</label>
+          <input type="radio" name="location">
+          <label>en Tunisie</label>
+          <input type="radio" name="location">
+          <label>à l’étranger</label>
+        </div>
+
+        <div>
+          <label for="dateNaissance" class="path-labels">date de naissance</label>
+          <input type="date" name="dateNaissance" id="dateNaissance">
+        </div>
+
+        <div>
+          <label for="codePostal" class="path-labels">Code postal:</label>
+          <input type="number" name="codePostal" id="codePostal" min="1000" max="9999">
+        </div>
+
+        <div>
+          <label for="ville" class="path-labels">Ville:</label>
+          <select name="ville" id="ville">
+            <option value="1">Tunis</option>
+            <option value="2">Sousse</option>
+            <option value="3">Sfax</option>
+            <option value="4">Gabes</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="path-labels">Type de carte:</label>
+          <input type="checkbox">
+          <label>Visa</label>
+          <input type="checkbox">
+          <label>Mastercard</label>
+        </div>
+
+        <div>
+          <label for="userRemarques" class="path-labels">Vos remarques:</label>
+          <textarea name="userRemarques" id="userRemarques"></textarea>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

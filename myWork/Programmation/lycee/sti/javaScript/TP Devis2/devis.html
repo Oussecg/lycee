@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <script src="controles.js"></script>
+</head>
+<body>
+<form action="" >
+    <h1>DEVIS</h1>
+    <fieldset>
+        <legend>Client</legend>
+          <div><label for="">Nom:</label><input type="text" id="nom"></div>
+          <div><label for="">Téléphoné:</label><input type="phone" id="tel"></div>
+          <div><label for="">Email:</label><input type="mail" id="mail"></div>
+          <div> <label for="">Date de naissance:</label><input type="date" id="dn"></div>
+    </fieldset><br>
+    <fieldset>
+        <legend>Marque</legend>
+        <div><label for=""></label><input type="radio" id="m1" name="mrq" value="1700">Lenovo</div>
+        <div><label for=""></label><input type="radio" id="m2" name="mrq" value="1800">Dell</div>
+        <div><label for=""></label><input type="radio" id="m3" name="mrq" value="1300">Acer</div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Accessoire</legend>
+        <div><label for=""></label><input type="checkbox" id="imp" name="acc" value="1000"> Imprimante</div>
+        <div><label for=""></label><input type="checkbox" id="csq" name="acc" value="300">Casque</div>
+        <div><label for=""></label><input type="checkbox" id="sr" name="acc" value="80">Souris</div>
+    </fieldset>
+
+    <div>
+      <label for="">Remise</label>
+      <select name="rem" id="rem">
+          <option value="none">Choisir le taux</option>
+          <option value="10">10%</option>
+          <option value="15">15%</option>
+          <option value="20">20%</option>
+      </select>
+    </div>
+
+    <label id="lb">Qte:</label> <input type="number" id="qte"> <br>
+
+
+    <input type="button" value="Calculer" onclick="calcul()" id="bt"><br>
+    Total: <output  id="tot"><br>
+
+
+
+</form>
+</body>
+</html>
