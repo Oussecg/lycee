@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="mesStyles.css" />
+	</head>
+	<body>
+		<h1 id="reclamationH1">Réclamation de Panne</h1>
+		<form action="">
+			<fieldset>
+				<legend>Information Personnelles</legend>
+				<div>
+					<label for="presentationTel">Numéro téléphone</label>
+					<input type="text" id="presentationTel" />
+				</div>
+
+				<div>
+					<label for="nomWprenom">Nom et Prénom</label>
+					<input type="text" id="nomWprenom" />
+				</div>
+
+				<div>
+					<label for="reclamationAdresse">Adresse</label>
+					<textarea name="" id="reclamationAdresse"></textarea>
+				</div>
+
+				<div>
+					<label for="">Type de Panne</label>
+					<span>
+						<input
+							type="radio"
+							name="typePanne"
+							id="radioGsm"
+							value="R"
+						/>Réseau GSM
+						<input
+							type="radio"
+							name="typePanne"
+							id="radioInternet"
+							value="I"
+						/>Internet
+						<input type="radio" name="typePanne" id="radioAutre" value="A" />
+						Autres
+						<input type="text" id="textAutre" disabled/>
+					</span>
+				</div>
+
+				<div>
+					<label for="description">Description</label>
+					<textarea id="description" maxlength="100"></textarea>
+					<span id="descriptionCount">Il vous reste 100 Caractères</span>
+				</div>
+
+                <div>
+                    <input type="submit" value="Valider" onclick="return Enregistrement();" class="formButton">
+                    <input type="reset" value="Annuler" class="formButton">
+                </div>
+			</fieldset>
+		</form>
+	</body>
+</html>
