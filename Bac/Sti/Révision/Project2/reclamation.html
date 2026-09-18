@@ -5,8 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="mesStyles.css" />
+		<script src="mesControles.js"></script>
 	</head>
-	<body>
+	<body id="reclamationBody">
 		<h1 id="reclamationH1">Réclamation de Panne</h1>
 		<form action="">
 			<fieldset>
@@ -18,7 +19,11 @@
 
 				<div>
 					<label for="nomWprenom">Nom et Prénom</label>
-					<input type="text" id="nomWprenom" />
+					<input
+						type="text"
+						id="nomWprenom"
+						onkeydown="Accepter('nomWprenom')"
+					/>
 				</div>
 
 				<div>
@@ -34,29 +39,41 @@
 							name="typePanne"
 							id="radioGsm"
 							value="R"
+							onclick="desactiver();"
 						/>Réseau GSM
 						<input
 							type="radio"
 							name="typePanne"
 							id="radioInternet"
 							value="I"
+							onclick="desactiver();"
 						/>Internet
-						<input type="radio" name="typePanne" id="radioAutre" value="A" />
+						<input type="radio" name="typePanne" id="radioAutre" value="A" onclick="activer();"/>
 						Autres
-						<input type="text" id="textAutre" disabled/>
+						<input type="text" id="textAutre" disabled />
 					</span>
 				</div>
 
 				<div>
 					<label for="description">Description</label>
-					<textarea id="description" maxlength="100"></textarea>
-					<span id="descriptionCount">Il vous reste 100 Caractères</span>
+					<textarea id="description" maxlength="100" oninput="affiche();"></textarea>
+					<span id="descriptionCount">Il vous reste <output id="a100">100</output> Caractères</span>
 				</div>
 
-                <div>
-                    <input type="submit" value="Valider" onclick="return Enregistrement();" class="formButton">
-                    <input type="reset" value="Annuler" class="formButton">
-                </div>
+				<div>
+					<label for="range">Range: <span id="range">0</span></label>
+					<input type="range" name="" id="inputrange" min="0" max="20" value="0" onkeydown="change();">
+				</div>
+
+				<div>
+					<input
+						type="submit"
+						value="Valider"
+						onclick="return Enregistrement();"
+						class="formButton"
+					/>
+					<input type="reset" value="Annuler" class="formButton" />
+				</div>
 			</fieldset>
 		</form>
 	</body>
