@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mesStyles.css">
+    <script src="mesControles.js"></script>
+</head>
+<body>
+    <h2>Prise de rendez-vous</h2>
+    <fieldset>
+        <legend>Informations du rendez-vous</legend>
+        <form action="" onsubmit="return RVD('all');" >
+            <div>
+                <label for="idPatient">Identifiant patient:</label>
+                <input type="text" name="idPatient" id="idPatient" onblur="activerMedecin();">
+            </div>
+
+            <div>
+                <label for="codeMedecin">Code Médecin:</label>
+                <input type="text" name="codeMedecin" id="codeMedecin" disabled>
+            </div>
+
+            <div>
+                <label for="dateRvd">Date RVD:</label>
+                <input type="date" name="dateRvd" id="dateRvd">
+            </div>
+
+            <div>
+                <label for="heureRvd">Date RVD:</label>
+                <input type="time" name="heureRvd" id="heureRvd" min="08:00" max="20:00">
+            </div>
+
+            <div>
+                <input type="submit" value="Enregistrer" class="formButton">
+                <input type="reset" value="Annuler" class="formButton">
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>

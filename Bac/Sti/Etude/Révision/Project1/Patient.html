@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient</title>
+    <script src="mesControles.js"></script>
+    <link rel="stylesheet" href="mesStyles.css">
+</head>
+<body onload="IdPatient();">
+    <form>
+        
+        <fieldset>
+            <legend>Informations Personnelles</legend>
+            
+            <div>
+                <label for="">Identifient patient:</label>
+                <input type="text" name="" id="IdPatient" readonly>
+            </div>
+    
+            <div>
+                <label for="">Nom:</label>
+                <input type="text" name="" id="nom">
+            </div>
+    
+            <div>
+                <label for="">Prénom:</label>
+                <input type="text" name="" id="pre">
+            </div>
+    
+            <div>
+                <label for="">Date de naissance:</label>
+                <input type="date" name="" id="dateNaissance" required>
+            </div>
+    
+            <div>
+                <label for="">Sexe:</label>
+            
+                <span>
+                    <input type="radio" name="sex" value="H" id="h" style="margin-right: 4px;">Homme
+                    <input type="radio" name="sex" value="F" id="f" style="margin-right: 4px;">Femme
+                </span>
+            </div>
+    
+            <div>
+                <label for="">Téléphone:</label>
+                <input type="tel" name="tel" id="tel" required>
+            </div>
+    
+            <div>
+                <label for="">Email:</label>
+                <input type="text" name="email" id="email" required>
+            </div>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Informations Médicales</legend>
+            <div>
+                <label for="">Group Sanguin:</label>
+                <select name="ts" id="ts">
+                    <option value="">choisir votre groupe sanguin</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+            </div>
+    
+            <div>
+                <label for="">Antécédents médicaux:</label>
+                <textarea name="am" id="am" maxlength="150" rows="5"></textarea>
+            </div>
+        </fieldset>
+    
+        <div>
+            <input type="submit" class="formButton" value="Enregistrer" onclick="return Patient();">
+            <input type="reset" class="formButton" value="Effacer">
+        </div>
+    </form>
+</body>
+</html>
