@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="insBody">
+    <form method="post" action="valide.html" target="_blank">
+        <fieldset>
+            <legend>Donnés de connection</legend>
+            <div>
+                <label for="">Email: </label>
+                <input type="email" name="" id="Email" placeholder="user@exemple.com" required>
+            </div>
+
+            <div>
+                <label for="">Mot de passe: </label>
+                <input type="password" name="" id="password" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Renseignement</legend>
+            <div>
+                <label for="" class="Cs">Nom et Prénom: </label>
+                <input type="text" name="" id="NP">
+            </div>
+
+            <div>
+                <label for="">Date de naissance: </label>
+                <input type="date" name="" id="ns">
+            </div>
+
+            <div>
+                <label for="">N° tel du parent: </label>
+                <input type="tel" name="" id="tel" maxlength="8">
+            </div>
+
+            <div>
+                <label for="">Nombre de fratrie: </label>
+                <input type="number" name="" id="NbrFr" value="0" min="0">
+            </div>
+            <div>
+                <label for="">Genre: </label>
+                file <input type="radio" name="genre" id="" value="F">
+                garçon <input type="radio" name="genre" id="" value="H">
+            </div>
+
+            <div>
+                <label for="">Gantine: </label>
+                Oui <input type="radio" name="gan" id="" value="O" checked>
+                Non <input type="radio" name="gan" id="" value="N">
+            </div>
+
+            <div>
+                <label for="">Situation familial: </label>
+                <select name="" id="">
+                    <option value="M">Marié</option>
+                    <option value="D">Divorcé</option>
+                    <option value="V">Veuf</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="">Lieu de naissance: </label>
+                <input list="vil" id="V">
+                <datalist id="vil">
+                    <option value="Sfax">S</option>
+                    <option value="Sousse">S</option>
+                    <option value="Tunis">T</option>
+                    <option value="Gabes">G</option>
+                </datalist>
+            </div>
+
+            <div>
+                <label for="" class="Cs">Adresse: </label>
+                <textarea name="" id="adr"></textarea>
+            </div>
+        </fieldset>
+
+        <div id="buttonContainer">
+            <input type="submit" value="Envoyer" class="formButtons">
+            <input type="reset" value="Annuler" class="formButtons">
+        </div>
+    </form>
+</body>
+</html>
