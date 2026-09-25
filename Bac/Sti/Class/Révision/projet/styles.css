@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+}
+
+header, footer{
+    text-align: center;
+    background-color: aliceblue;
+    height: 15%;
+}
+
+h1{
+    margin: 0;    
+}
+
+h2{
+    font-family: "cursive";
+    color: blue;
+}
+
+hr{
+    border-style: dotted;
+    border-color: rgba(36, 36, 47, 1);
+}
+
+#ecoleImg{
+    float: left;
+    width: 120px;
+    height: 70px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#basImg{
+    float: right;
+}
+
+main{
+    height: 70%;
+}
+
+section{
+    width: 68%;
+    height: 100%;
+    float: left;
+    margin: 10px;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+aside{
+    width: 30%;
+    height: 100%;
+    float: right;
+}
+
+#enfantImg{
+    width: 100%;
+    height: 100%;
+    filter: blur(3px);
+}
+
+.a{
+    display: inline-block;
+    background-color: white;
+    width: 15%;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    font-size: 24px;
+}
+
+.a:hover{
+    color: brown;
+    background-color: aliceblue;
+}
+
+footer{
+    font-style: italic;
+}
+
+table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+}
+
+td, th{
+    border: 1px solid black;
+}

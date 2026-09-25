@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>      
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="images/ecole.jpg" alt="Ecole">
+        <img src="images/ecole.jpg" alt="Ecole" id="ecoleImg">
         <span>
             <h1>Le PETIT</h1>
             <nav>
-                <a href="presentation.html" target="ifr">Accueil</a>
-                <a href="horaires.html" target="ifr">Horaires</a>
-                <a href="activites.html" target="ifr">Activités</a>
-                <a href="inscription.html" target="ifr">Inscription</a>
-                <img src="images/bas.png" alt="bas">
+                <a href="presentation.html" target="ifr" class="a">Accueil</a>
+                <a href="horaires.html" target="ifr" class="a">Horaires</a>
+                <a href="activites.html" target="ifr" class="a">Activités</a>
+                <a href="inscription.html" target="ifr" class="a">Inscription</a>
+                <a href="#bas">
+                    <img src="images/bas.png" alt="bas" id="basImg">
+                </a>
             </nav>
         </span>
     </header>
@@ -24,6 +27,12 @@
         <section>
             <iframe src="presentation.html" name="ifr" frameborder="0"></iframe>
         </section>
+        <aside>
+            <img src="images/enfant.jpg" alt="Enfant" id="enfantImg">
+        </aside>
     </main>
+    <footer id="bas">
+        <b>Email</b>: Le petit@gmail.com
+    </footer>
 </body>
 </html>
