@@ -1,0 +1,88 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 20px;
+	color: #333;
+}
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+
+th,
+td {
+	border: 1px solid #ccc;
+	padding: 10px 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+
+td.empty {
+	background-color: #fcfcfc;
+	/* Optional subtle diagonal stripes to signal "Free Time" */
+	background-image: repeating-linear-gradient(
+		45deg,
+		#f8f9fa,
+		#f8f9fa 10px,
+		#ffffff 10px,
+		#ffffff 20px
+	);
+}
+
+.time {
+	max-width: 180px;
+}
+
+@media print {
+  @page {
+    size: portrait;
+    margin: 0.5cm; /* Small margins so the table has maximum width */
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Keeps columns perfectly equal */
+    page-break-inside: avoid; /* Prevents splitting onto 2 pages */
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 2px; /* Balanced height without pushing to page 2 */
+    font-size: 11px;    /* Prevents word wrapping/overlapping */
+    word-wrap: break-word;
+  }
+
+  th {
+    background-color: #f2f2f2 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  td.empty {
+    background-image: repeating-linear-gradient(
+      45deg,
+      #f8f9fa,
+      #f8f9fa 10px,
+      #ffffff 10px,
+      #ffffff 20px
+    ) !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
