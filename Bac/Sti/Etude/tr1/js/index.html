@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-weight: bold;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let a = Number(prompt("A= "))
+        let b = Number(prompt("B= "))
+        if (b == 0){
+            document.write("<p style='color: red;'>Donner B != de 0</p>");
+        } else{
+            let s = a / b;
+            document.write("<p style='color: green;'>" + a + "/" + b + "=" + s + "</p>");
+        }
+    </script>
+</body>
+</html>

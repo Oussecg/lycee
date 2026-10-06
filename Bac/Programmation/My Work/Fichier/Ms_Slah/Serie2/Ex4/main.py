@@ -80,12 +80,12 @@ def calculer(ch: str) -> str:
             
             # Il existe trois parties
             
-            # Partie 1 : ( Calculer le résultat de * )
+            # Partie 1 : ( Calculer le résultat de / )
             x1 = int(e["ch1"])
             x2 = int(e["ch2"])
             r = x1 // x2
             
-            # Partie 2: ( Effacer le opération de * )
+            # Partie 2: ( Effacer le opération de / )
             ch1 = ch[ : e["i1"]]
             ch2 = ch[e["i2"] : ]
             
@@ -135,5 +135,7 @@ def afficher(N):
         Fr.write(calculer(ch) + "\n")
     F.close()
     Fr.close()
+    
+    
         
-calculer("12+12*13-15/3+5-2/5")
+# calculer("12+12*13-15/3+5-2/5")

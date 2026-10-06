@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mesStyles.css">
+    <script src="mesControles.js"></script>
+    <title>Document</title>
+</head>
+<body id="ajout" onload="AfficheDate();">
+    <form action="" onsubmit="return DateMission();">
+        <fieldset>
+            <legend>Ajout Mission</legend>
+
+            <div>
+                <label for="">Numéro Colis</label>
+                <input type="text" name="" id="Nc">
+            </div>
+
+            <div>
+                <label for="">Ip Drone</label>
+                <input type="text" name="" id="Ip1" placeholder="A.B.C.D">
+            </div>
+
+            <div>
+                <label for="">Date Mission</label>
+                <input type="date" name="" id="Dm">
+            </div>
+
+            <div>
+                <label for="">Heure de départ</label>
+                <input type="time" name="" id="Hd">
+                <input type="time" name="" id="Ha">
+            </div>
+
+            <div>
+                <label for="">Distance</label>
+                <input type="number" name="" id="Dis">
+            </div>
+
+            <div>
+                <input type="reset" value="Annuler" id="An">
+                <input type="submit" value="Ajouter" id="Aj">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

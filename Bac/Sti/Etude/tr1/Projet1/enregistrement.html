@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="mesStyles.css" />
+        <script src="mesControles.js"></script>
+	</head>
+	<body onload="GenererIp();">
+        <form action="" onsubmit="return Enregistrent();">
+            <fieldset>
+                <legend>Ajout Drone</legend>
+                <div>
+                    <label for="">Ip Drone</label>
+                    <input type="text" placeholder="A.B.C.D" id="ip" required readonly/>
+                </div>
+    
+                <div>
+                    <label for="">Modèle Drone</label>
+                    <input type="text" name="" id="mod" />
+                </div>
+    
+                <div>
+                    <label for="">Statut Drone</label>
+    
+                    <span>
+                        <input type="radio" name="st" id="rM" value="M" />En Mission
+                    </span>
+    
+                    <span>
+                        <input type="radio" name="st" id="rC" value="C" />En Charge
+                    </span>
+    
+                    <span>
+                        <input type="radio" name="st" id="rC" value="D" />Disponible
+                    </span>
+                </div>
+    
+                <div>
+                    <label for="">Capacité Drone</label>
+                    <input type="number" name="" id="Cd" required min="1" max="40"/>Kg
+                </div>
+    
+                <div>
+                    <label for="">Autonome Drone</label>
+                    <input type="number" name="" id="Ad" required min="1" max="40">Km
+                </div>
+    
+                <div>
+                    <input type="reset" value="Annuler" class="fb" id="eff">
+
+                    <input type="submit" value="Enregistrer" class="fb" id="sb">
+                </div>
+            </fieldset>
+        </form>
+	</body>
+</html>
