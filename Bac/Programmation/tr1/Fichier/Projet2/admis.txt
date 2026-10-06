@@ -1,0 +1,6 @@
+Les admis sont : 
+Oussema: 20.0 
+Nombre d'admis= 1 
+
+Le(s) meilleur(s) élèves(s):
+Oussema 
