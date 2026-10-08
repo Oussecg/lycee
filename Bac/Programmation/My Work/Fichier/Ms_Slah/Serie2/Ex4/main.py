@@ -5,7 +5,7 @@ folder_path = str(Path(__file__).resolve().parent)
 
 def saisir() -> int:
     N = int(input("N= "))
-    while 2 <= N <= 20 :
+    while not 1 <= N <= 20 :
         N = int(input("N= "))
     return N
 
@@ -20,13 +20,13 @@ def est_operation(ch: str) -> bool:
     return test 
     
     
-def remplir(N):
+def remplir(N: int):
     F = open(folder_path + "/operations.txt", "w")
     
-    for _ in range(N):
-        ch = input("Ch= ")
-        while est_operation(ch):
-            ch = input("Ch= ")
+    for i in range(1, N+1):
+        ch = input(f"Ch{i}= ")
+        while not est_operation(ch):
+            ch = input(f"Ch{i}= ")
         F.write(ch + "\n")
     
     F.close()
@@ -62,6 +62,8 @@ def calculer(ch: str) -> str:
             
             # Il existe trois parties
             
+            print("e1", e["ch1"])
+            print("e2", e["ch2"])
             # Partie 1 : ( Calculer le résultat de * )
             x1 = int(e["ch1"])
             x2 = int(e["ch2"])
@@ -71,6 +73,7 @@ def calculer(ch: str) -> str:
             ch1 = ch[ : e["i1"]]
             ch2 = ch[e["i2"] : ]
             
+            print(ch1, ch2)
             # Partie 3: ( Concaténation des trois chaines )
             ch = ch1 + ch2 + e["c"] + str(r)
             
@@ -93,49 +96,47 @@ def calculer(ch: str) -> str:
             ch = ch1 + ch2 + e["c"] + str(r)
             
     # Etape 2: La calcule de ch
-    nb = ""
-    nbr = 0
-    s = 0
-    i = 0
-    while i < len(ch):
-        if ch[i] in ["+", "-"]:
-            nbr += 1
-            if nbr == 1:
-                s += int(nb)
-            else:
-                test = True
-                j = i+1
-                nb1 = ""
-                while test and j < len(ch):
-                    if ch[j] in ["+", "-"]:
-                        i = j
-                        test = False
-                    else:
-                        nb1 += ch[j]
-                        j += 1
-                print(f"nb1= {nb1}, i= {i}, j= {j}")
-                x = int(nb1)
-                if ch[i] == "+":
-                    s += x
-                else:
-                    s -= x
+    test = True
+    p = 0
+    while test and p < len(ch):
+        if ch[p] in ["+", "-"] and p >= 1:
+            test = False
         else:
-            nb += ch[i]
-        i += 1
+            p += 1
+    s = int(ch[ : p])
+    i = 0
+    for i in range(p, len(ch)):
+        if ch[i] in ["+", "-"]:
+            test = True
+            j = i + 1
+            while test and j < len(ch):
+                if ch[j] in ["+", "-"]:
+                    test = False
+                else:
+                    j += 1
+            if ch[i] == "+":
+                s += int(ch[i+1: j])
+            else:
+                s -= int(ch[i+1: j])
+            i = j         
     ch += "=" + str(s)
-    print(ch)
     return ch
 
+def remove_newline(s: str) -> str:
+    return s.rstrip("\n")
 
-def afficher(N):
+def afficher(N: int):
     F = open(folder_path + "/operations.txt", "r")
     Fr = open(folder_path + "/calculer.txt", "w")
     for _ in range(N):
         ch = F.readline()
+        ch = remove_newline(ch)
         Fr.write(calculer(ch) + "\n")
     F.close()
     Fr.close()
     
     
         
-# calculer("12+12*13-15/3+5-2/5")
+N = saisir()
+remplir(N)
+afficher(N)
