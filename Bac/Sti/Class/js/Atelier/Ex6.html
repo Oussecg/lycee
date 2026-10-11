@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        do{
+            var ch = String(prompt("Ch= "))
+        } while (ch == "")
+
+        do{
+            var c = String(prompt("C= "))
+        } while (c.length != 1)
+
+        let nbr = 0;
+        for (let i = 0; i < ch.length; i ++){
+            if (ch[i] == c){
+                nbr ++;
+            }
+        }
+        document.write(`Le nombre d'occérance de ${c} dans ${ch} est ${nbr}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

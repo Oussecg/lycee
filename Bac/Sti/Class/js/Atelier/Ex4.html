@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        do {
+            var x = String(prompt("aaaa/mm/jj"));
+        } while (! (x.length === 10 && x.charAt(4) == "/" && x.charAt(7) == "/") )
+
+        x = new Date(x);
+        let y = x.getFullYear();
+        let m = x.getMonth();
+        let d = x.getDate();
+
+        switch (m) {
+            case 0: mm = "January"
+            break
+            case 1: mm = "February"
+            break
+            case 2: mm = "Mars"
+            break
+            case 3: mm = "April"
+            break
+            case 4: mm = "May"
+            break
+            case 5: mm = "June"
+            break
+            case 6: mm = "July"
+            break
+            case 7: mm = "August"
+            break
+            case 8: mm = "September"
+            break
+            case 9: mm = "October"
+            break
+            case 10: mm = "November"
+            break
+            case 11: mm = "December"
+        }
+
+        let ch = d + " " + mm + " " + y;
+        document.write(ch);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
