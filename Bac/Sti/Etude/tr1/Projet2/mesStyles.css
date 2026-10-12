@@ -1,0 +1,30 @@
+form{
+    background: url("font.jpg");
+}
+
+fieldset{
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+#abonnement fieldset{
+    position: relative;
+}
+
+input, textarea, select{
+    padding: 5px 10px;
+    color: #000067;
+    background-color: #9E9EFF;
+    border: 2px solid #000067;
+    text-align: center;
+}
+
+span{
+    color: #000067;
+}
+
+output{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}

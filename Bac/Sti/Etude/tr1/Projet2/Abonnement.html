@@ -1,0 +1,50 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Abonnement</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="mesStyles.css">
+  <script src="mesScripts.js"></script>
+</head>
+<body id="abonnement">
+    <form method="" onsubmit="return verif2();">
+        <fieldset>
+            <table>
+                <tr>
+                    <td>Code Client :</td> <td> <input type="text" id="cdc" name="cdc" /></td>
+                </tr>
+                <tr>
+                    <td>Date Début :</td> <td> <input type="date" id="dd" name="dd" /></td>
+                </tr>
+                <tr>
+                    <td>Date Fin :</td> <td> <input type="date" id="df" name="df" /></td>
+                </tr>
+                <tr>
+                    <td>Type Abonnement :</td> 
+                    <td>
+                        <select name="" id="Ta" onchange="Prix();">
+                            <option value="Nan">Choisir type</option>
+                            <option value="120">Basic</option>
+                            <option value="150">Complet</option>
+                            <option value="200">Extra</option>
+                        </select>
+                    </td>
+                </tr>
+                    <td><input type="submit" value="S'abonner" /><span> </span><input type="reset" value="Annuler" /></td> <td></td>
+                </tr>
+
+            </table>
+            <output id="out">Prix: ...DT</output>
+        </fieldset>
+    </form>
+
+</section>
+
+
+
+
+</body>
+
+</html>
