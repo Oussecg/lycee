@@ -1,0 +1,4 @@
+Maximum de la colonne 1 = 76 
+Maximum de la colonne 2 = 82 
+Maximum de la colonne 3 = 89 
+Maximum de la matrice = 89
