@@ -9,9 +9,15 @@ def saisir(ch: str, x1: int, x2: int) -> int:
     return N
 
 def remplir(M, p: int, q: int):
+    Ft = open(folder_path + "/MaxMatrice.txt", "w")
+    Ft.write("Avant le Triage \n")
     for i in range(p):
         for j in range(q):
             M[i, j] = randint(10, 99)
+            Ft.write(f"{M[i, j]}, ")
+        Ft.write("\n")
+    Ft.write("\n")
+        
     
 def Afficher(M, p: int, q: int):
     for j in range(q):
@@ -24,8 +30,15 @@ def Afficher(M, p: int, q: int):
                     M[i, j] = M[i+1, j]
                     M[i+1, j] = aux
                     test = False
-    Ft = open(folder_path + "/MaxMatrice.txt", "w")
+    Ft = open(folder_path + "/MaxMatrice.txt", "a")
+    Ft.write("Après le triage \n")
     Mt = 0
+    for i in range(p):
+        for j in range(q):
+            Ft.write(f"{M[i, j]}, ")
+        Ft.write("\n")
+    Ft.write("\n")
+    
     for j in range(q):
         Mc = 0
         for i in range(p):

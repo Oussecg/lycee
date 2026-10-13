@@ -1,4 +1,20 @@
-Maximum de la colonne 1 = 76 
-Maximum de la colonne 2 = 82 
-Maximum de la colonne 3 = 89 
-Maximum de la matrice = 89
+Avant le Triage 
+47, 11, 29, 99, 85, 
+67, 46, 23, 44, 88, 
+20, 53, 65, 62, 33, 
+56, 83, 80, 42, 47, 
+46, 74, 14, 88, 50, 
+
+Après le triage 
+47, 11, 23, 44, 85, 
+20, 46, 29, 62, 33, 
+56, 53, 65, 42, 47, 
+46, 74, 14, 88, 50, 
+67, 83, 80, 99, 88, 
+
+Maximum de la colonne 1 = 67 
+Maximum de la colonne 2 = 83 
+Maximum de la colonne 3 = 80 
+Maximum de la colonne 4 = 99 
+Maximum de la colonne 5 = 88 
+Maximum de la matrice = 99
