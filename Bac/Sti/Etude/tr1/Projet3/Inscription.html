@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="mesStyles.css">
+    <script src="mesScripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Présentation</h1>
+        <h1 id="ins">Inscription</h1>
+        <h1>Test de Niveau</h1>
+    </header>
+    <hr>
+    <form action="" method="get" onsubmit="return Enregistrer();">
+        <fieldset>
+            <legend>Inscription</legend>
+
+            <div>
+                <label for="">Nom:</label>
+                <input type="text" name="" id="N">
+            </div>
+            
+            <div>
+                <label for="">Prénom:</label>
+                <input type="text" name="" id="P">
+            </div>
+            
+            <div>
+                <label for="">Adresse:</label>
+                <input type="text" name="" id="Ad">
+            </div>
+            
+            <div>
+                <label for="">Date da Naissance:</label>
+                <input type="date" name="" id="Dn">
+            </div>
+            
+            <div>
+                <label for="">E-mail:</label>
+                <input type="text" name="" id="Em">
+            </div>
+
+            <div>
+                <label for="">Mot de passe:</label>
+                <input type="text" name="" id="Mp">
+            </div>
+            
+            <div>
+                <label for="">Téléphone:</label>
+                <input type="text" name="" id="Tel">
+            </div>
+
+            <div>
+                <label for="">Formation:</label>
+                <input type="checkbox" name="For" value="H" onchange="Change('HTML5')">HTML5
+                <input type="checkbox" name="For" value="C" onchange="Change('CSS3')">CSS3
+                <input type="checkbox" name="For" value="J" onchange="Change('JavaScript')">JS
+            </div>
+
+            <div>
+                <label id="Choix">Votre Choix: <output id="out"></output></label>
+            </div>
+
+            <div>
+                <input type="submit" value="Enregistrer" class="formButtons">
+                <input type="reset" value="Annuler" class="formButtons">
+            </div>
+            
+            
+        </fieldset>
+    </form>
+</body>
+</html>

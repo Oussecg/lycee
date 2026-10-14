@@ -1,0 +1,59 @@
+body{
+    background: linear-gradient(to right, black, blue);
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header #ins{
+    color: green;
+}
+
+hr{
+    border-color: white;
+}
+
+fieldset{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+fieldset legend{
+    font-size: large;
+    font-weight: 700;
+}
+
+fieldset div{
+    margin-bottom: 10px;
+}
+
+fieldset div label{
+    display: inline-block;
+    width: 150px;
+}
+
+fieldset div #Choix{
+    width: fit-content;
+}
+
+.formButtons{
+    border: 2px solid white;
+    color: white;
+    background: none;
+    padding: 4px 10px;
+    font-weight: bold;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.formButtons:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+}
+
