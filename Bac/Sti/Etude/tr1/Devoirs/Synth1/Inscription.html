@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+        <link rel="stylesheet" href="mesStyles.css">
+        <script src="mesScripts.js"></script>
+	</head>
+	<body>
+        
+        <form action="" method="get" onsubmit="return Enregistrer();">
+            <h1>Inscription au clubs informatiques</h1>
+    
+            <hr>
+
+            <div>
+                <label for="">Ncin:</label>
+                <input type="text" name="" id="Nc" />
+            </div>
+
+            <div>
+                <label for="">Nom et Prénom:</label>
+                <input type="text" name="" id="Np" />
+            </div>
+
+            <div>
+                <label for="">Email:</label>
+                <input type="email" name="" id="Em" />
+            </div>
+
+            <div>
+                <label for="">Adresse:</label>
+                <textarea name="" id="Ad"></textarea>
+            </div>
+
+            <div>
+                <label for="">Classe:</label>
+                <input type="text" name="" id="Cl">
+            </div>
+
+            <div>
+                <label for="">Établissement:</label>
+                <br>
+                <input type="radio" name="Et" value="Et">Étatique
+                <br>
+                <input type="radio" name="Et" value="Pi">Privé
+                <br>
+                <input type="radio" name="Et" value="Ca">Candidat
+            </div>
+
+            <div>
+                <label for="">Club:</label>
+                <select name="" id="Clu">
+                    <option value="NaN">Choisir un club</option>
+                    <option value="Pr">Programmation</option>
+                    <option value="Bd">Base de donnés</option>
+                    <option value="Tic">Tic</option>
+                </select>
+            </div>
+
+            <div class="formButtons-container">
+                <input type="submit" value="s’inscrire" class="formButtons">
+                <input type="reset" value="réessayer" class="formButtons">
+            </div>
+		</form>
+	</body>
+</html>
