@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Inscription - 3D Elite Experience</title>
+		<link rel="stylesheet" href="style.css" />
+		<!-- External Libraries for 3D & Effects -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+	</head>
+	<body>
+		<!-- 3D Interactive Canvas Background -->
+		<canvas id="bg-canvas"></canvas>
+
+		<!-- Floating Ambient Lights -->
+		<div class="ambient-glow glow-1"></div>
+		<div class="ambient-glow glow-2"></div>
+
+		<div class="form-container" data-tilt data-tilt-max="3" data-tilt-speed="400" data-tilt-perspective="1000">
+			<!-- Live Progress Bar -->
+			<div class="progress-container">
+				<div id="progress-bar" class="progress-bar"></div>
+			</div>
+
+			<form id="inscriptionForm" action="#" method="post">
+				<div class="form-header">
+					<h2>Inscription</h2>
+					<span id="completion-text">0% complété</span>
+				</div>
+
+				<!-- Nom et prénom -->
+				<div class="form-group" data-field>
+					<label for="nom">Nom et prénom:</label>
+					<div class="input-wrapper">
+						<input type="text" id="nom" name="nom" required placeholder="Entrez votre nom..." />
+					</div>
+				</div>
+
+				<!-- Nombre de frères et soeurs -->
+				<div class="form-group" data-field>
+					<label for="freres_soeurs">Nombre de frères et soeurs:</label>
+					<div class="input-wrapper">
+						<input type="number" id="freres_soeurs" name="freres_soeurs" min="0" placeholder="0" />
+					</div>
+				</div>
+
+				<!-- Date de naissance -->
+				<div class="form-group" data-field>
+					<label for="date_naissance">Date de naissance:</label>
+					<div class="input-wrapper">
+						<input type="date" id="date_naissance" name="date_naissance" />
+					</div>
+				</div>
+
+				<!-- Genre -->
+				<div class="form-group" data-field>
+					<label>Genre:</label>
+					<div class="radio-group">
+						<label class="radio-card"><input type="radio" name="genre" value="Masculin" /> <span>Masculin</span></label>
+						<label class="radio-card"><input type="radio" name="genre" value="Feminin" /> <span>Féminin</span></label>
+					</div>
+				</div>
+
+				<!-- Adresse -->
+				<div class="form-group" data-field>
+					<label for="adresse">Adresse:</label>
+					<div class="input-wrapper">
+						<textarea id="adresse" name="adresse" rows="3" placeholder="Votre adresse complète..."></textarea>
+					</div>
+				</div>
+
+				<!-- N° Tel -->
+				<div class="form-group" data-field>
+					<label for="tel">N° Tel:</label>
+					<div class="input-wrapper">
+						<input type="tel" id="tel" name="tel" placeholder="+216 ..." />
+					</div>
+				</div>
+
+				<!-- Votre section -->
+				<div class="form-group" data-field>
+					<label for="section">Votre section:</label>
+					<div class="input-wrapper">
+						<select id="section" name="section">
+							<option value="" disabled selected>Choisir une section</option>
+							<option value="informatique">Informatique</option>
+							<option value="sciences">Sciences Expérimentales</option>
+							<option value="mathematiques">Mathématiques</option>
+							<option value="economie">Économie et Gestion</option>
+						</select>
+					</div>
+				</div>
+
+				<!-- Loisir -->
+				<div class="form-group" data-field>
+					<label for="loisir">Loisir:</label>
+					<div class="input-wrapper">
+						<input type="text" id="loisir" name="loisir" list="listLoisir" placeholder="Ex: Sport, Camping..." />
+					</div>
+					<datalist id="listLoisir">
+						<option value="Sport">Sport</option>
+						<option value="Camping">Camping</option>
+						<option value="Jeux Électroniques">Jeux Électroniques</option>
+						<option value="Autres">Autres</option>
+					</datalist>
+				</div>
+
+				<!-- Adresse de votre site-->
+				<div class="form-group" data-field>
+					<label for="adresseSite">Adresse de votre site web:</label>
+					<div class="input-wrapper">
+						<input type="url" name="adresseSite" id="adresseSite" placeholder="https://example.com" />
+					</div>
+				</div>
+
+				<!-- Votre niveau en HTML5 -->
+				<div class="form-group range-group" data-field>
+					<label for="niveau">Votre niveau en HTML5 <span id="range-val-badge">50%</span></label>
+					<div class="range-wrapper">
+						<input type="range" id="niveau" name="niveau" min="0" max="100" value="50" />
+					</div>
+				</div>
+
+				<!-- Captcha / Je ne suis pas un robot -->
+				<div class="form-group checkbox-group" data-field>
+					<input type="checkbox" id="robot" name="robot" />
+					<label for="robot">Je ne suis pas un robot (Vérification sécurisée)</label>
+				</div>
+
+				<!-- Buttons -->
+				<div class="form-buttons">
+					<button type="submit" class="btn-submit">Soumettre l'Inscription</button>
+					<button type="reset" class="btn-reset">Réinitialiser</button>
+				</div>
+			</form>
+		</div>
+
+		<!-- Success Modal Popup -->
+		<div id="successModal" class="modal-overlay">
+			<div class="modal-card">
+				<div class="success-icon-3d">
+					<svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+				</div>
+				<h3>Inscription Réussie !</h3>
+				<p>Votre dossier d'inscription a été crypté et validé avec succès sur le réseau.</p>
+				<button id="closeModal" class="btn-close">Fermer la session</button>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
