@@ -1,0 +1,82 @@
+<!-- PARTIE b-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=!, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="controle.js"></script>
+    <title>Inscription</title>
+  </head>
+  <body>
+    <form id="fo" method="get" onsubmit="return verif2()" action="valide2.html">
+      <fieldset>
+        <legend>Inscription</legend>
+        <div>
+          <label for="la" id="la">Nom et prénom: </label>
+          <input type="text" id="np" />
+        </div>
+        <div>
+          <label for="la" id="la">Nombre de frères et soeurs: </label>
+          <input type="number" id="nbfs" />
+        </div>
+        <div>
+          <label for="la" id="la">Date de Naissance : </label>
+          <input type="date" id="dat" />
+        </div>
+        <div>
+          <label for="la" id="la">Genre : </label>
+          <input type="radio" id="m" name="g" />
+          <input type="radio" id="f" name="g" />
+        </div>
+        <div>
+          <label for="la" id="la">Adresse : </label>
+          <input type="textarea" id="ad" rows="3" cols="10" />
+        </div>
+        <div>
+          <label for="la" id="la">N°Tel : </label>
+          <input type="number" id="tel" />
+        </div>
+        <div>
+          <label for="la" id="la">Section</label>
+          <select id="op">
+            <option value="" default>Choisir une section</option>
+            <option value="Math">Math</option>
+            <option value="Science">Science</option>
+            <option value="Technique">Technique</option>
+            <option value="Info">Informatique</option>
+            <option value="Lettre">Lettre</option>
+            <option value="Eco">Economie Gestion</option>
+          </select>
+        </div>
+        <div>
+          <label for="la" id="la">Loisir : </label>
+          <input list="loisire" id="loisire" />
+          <datalist id="loisire">
+            <option>Sport</option>
+            <option>Camping</option>
+            <option>Jeux électronique</option>
+            <option>Musique</option>
+          </datalist>
+        </div>
+        <div>
+          <label for="la" id="la">Votre Niveau eb HTML : </label>
+          <input type="range" id="range" min="0" max="5" step="1" value="0" />
+        </div>
+        <div>
+          <label for="la" id="la">Adresse de votre site web</label
+          ><input type="url" id="url" />
+        </div>
+        <div>
+          <label for="la" id="la">Je ne suis pas un robot : </label>
+          <input type="checkbox" id="robot" />
+        </div>
+        <div id="bt">
+          <input type="submit" value="Inscription" id="ins" />
+          <input type="reset" value="Rétablir" id="ret" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

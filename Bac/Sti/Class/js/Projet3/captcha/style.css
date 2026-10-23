@@ -1,0 +1,22 @@
+body{
+    width: 70%;
+}
+div{
+    margin-top: 15px;
+}
+label{
+    display: inline-block;
+    width:20%;
+}
+.ca{
+    margin-left: 35%;
+}
+#co{
+    width:80%;
+}
+#bt{
+    margin-left: 35%;
+}
+input[type="reset"]{
+    margin-right: 10px;
+}

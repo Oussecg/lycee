@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>30</y>
+     <width>200</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid purple;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+color: purple;</string>
+   </property>
+   <property name="text">
+    <string>Propriétés sur les nombres</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Quitter">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>530</y>
+     <width>120</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(243, 108, 255);
+border: 2px solid rgb(243, 108, 255);
+background-color: white;
+</string>
+   </property>
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="Nbr">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>230</y>
+     <width>271</width>
+     <height>250</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid purple;
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color: purple;
+background-color: yellow;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Aff">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>190</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(243, 108, 255);
+border: 2px solid rgb(243, 108, 255);
+background-color: white;
+</string>
+   </property>
+   <property name="text">
+    <string>Afficher Nombre</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Ver">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>190</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(243, 108, 255);
+border: 2px solid rgb(243, 108, 255);
+background-color: white;
+</string>
+   </property>
+   <property name="text">
+    <string>Vérifier</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cB">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>120</y>
+     <width>101</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(243, 108, 255);
+border: 2px solid rgb(243, 108, 255);
+background-color: white;
+</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Polydivisible</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Narcissique</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QTableWidget" name="Tw">
+   <property name="geometry">
+    <rect>
+     <x>309</x>
+     <y>230</y>
+     <width>481</width>
+     <height>250</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>481</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>481</width>
+     <height>250</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid purple;
+color: purple;
+background-color: yellow;</string>
+   </property>
+   <attribute name="horizontalHeaderVisible">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="verticalHeaderStretchLastSection">
+    <bool>false</bool>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>Nombres</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nature</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

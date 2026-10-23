@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inscription</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="controle.js"></script>
+  </head>
+  <body>
+    <form method="post">
+      <fieldset>
+        <legend>Authentification</legend>
+        <div><label for="">Adresse Email</label><input type="email"id="mail" /></div>
+        <div><label for=""> Mot de passe</label><input type="password" id="pw"/></div>
+        <div>
+          <label for="" class="ca">Captcha</label
+          ><input type="text" readonly id="cap" /><input
+            type="button"
+            id="bts"
+            value="Actualiser"
+            
+          />
+        </div>
+        <div>
+          <label for="" id="co"
+            >Combien de lettres majuscules dans la zone captcha ?
+          </label>
+        </div>
+        <div>
+          <label for="" class="ca">Réponse</label><input type="number"id="nb" />
+        </div>
+        <div id="bt">
+          <input type="reset" value="Annuler" /><input
+            type="submit"
+            value="valider"
+          />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
