@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1052</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>20</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid black;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: white;</string>
+   </property>
+   <property name="text">
+    <string>Diagonal</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="pushN">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>79</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid black;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: white;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>279</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid black;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: white;</string>
+   </property>
+   <property name="text">
+    <string>Affichage du fichier texte</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="remp">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>180</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid black;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: white;</string>
+   </property>
+   <property name="text">
+    <string>Remplir M</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="qui">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>180</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid black;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: white;</string>
+   </property>
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ann">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>180</y>
+     <width>150</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid black;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: white;</string>
+   </property>
+   <property name="text">
+    <string>Annuler</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="aff">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>180</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid black;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: white;</string>
+   </property>
+   <property name="text">
+    <string>Afficher Fichier</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listR">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>330</y>
+     <width>501</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid black;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: white;</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableR">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>330</y>
+     <width>521</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid black;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: white;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>79</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid black;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: white;</string>
+   </property>
+   <property name="text">
+    <string>Taper n:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>280</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid black;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: white;</string>
+   </property>
+   <property name="text">
+    <string>Affichage de la matrice M</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
