@@ -34,7 +34,7 @@
 				<div class="form-group" data-field>
 					<label for="nom">Nom et prénom:</label>
 					<div class="input-wrapper">
-						<input type="text" id="nom" name="nom" required placeholder="Entrez votre nom..." />
+						<input type="text" id="nom" name="nom" placeholder="Entrez votre nom..." />
 					</div>
 				</div>
 
@@ -42,7 +42,7 @@
 				<div class="form-group" data-field>
 					<label for="freres_soeurs">Nombre de frères et soeurs:</label>
 					<div class="input-wrapper">
-						<input type="number" id="freres_soeurs" name="freres_soeurs" min="0" placeholder="0" />
+						<input type="number" id="freres_soeurs" name="freres_soeurs" placeholder="0" />
 					</div>
 				</div>
 
@@ -75,7 +75,7 @@
 				<div class="form-group" data-field>
 					<label for="tel">N° Tel:</label>
 					<div class="input-wrapper">
-						<input type="tel" id="tel" name="tel" placeholder="+216 ..." />
+						<input type="tel" id="tel" name="tel" placeholder="8 chiffres..." />
 					</div>
 				</div>
 
@@ -144,8 +144,20 @@
 					<svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
 				</div>
 				<h3>Inscription Réussie !</h3>
-				<p>Votre dossier d'inscription a été crypté et validé avec succès sur le réseau.</p>
+				<p>Votre dossier d'inscription a été vérifié et validé avec succès.</p>
 				<button id="closeModal" class="btn-close">Fermer la session</button>
+			</div>
+		</div>
+
+		<!-- Error Modal Popup -->
+		<div id="errorModal" class="modal-overlay">
+			<div class="modal-card modal-card-error">
+				<div class="error-icon-3d">
+					<svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+				</div>
+				<h3>Erreur de Saisie !</h3>
+				<p id="errorMessageText">Veuillez corriger le champ requis.</p>
+				<button id="closeErrorModal" class="btn-close btn-close-error">Corriger</button>
 			</div>
 		</div>
 

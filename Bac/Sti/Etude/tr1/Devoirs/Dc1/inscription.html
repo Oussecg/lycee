@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+        <link rel="stylesheet" href="Style.css">
+        <script src="Test.js"></script>
+	</head>
+	<body>
+		<form action="" method="get" onsubmit="">
+			<fieldset>
+				<legend>Informations Parent</legend>
+
+				<div>
+					<label for="">Nom</label>
+					<input type="text" name="" id="nom" />
+				</div>
+
+                <div>
+                    <label for="">Prénom</label>
+                    <input type="text" name="" id="pre1">
+                </div>
+                
+                <div>
+                    <label for="">Adresse</label>
+                    <input type="text" name="" id="adr">
+                </div>
+
+                <div>
+                    <label for="">Email</label>
+                    <input type="email" name="" id="ema">
+                </div>
+
+                <div>
+                    <label for="">Num Tel</label>
+                    <input type="text" name="" id="tel">
+                </div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Informations Joueur</legend>
+
+                <div>
+                    <label for="">Prénom</label>
+                    <input type="text" name="" id="pre2">
+                </div>
+
+                <div>
+                    <label for="">Genre</label>
+                    <span>
+                        <input type="radio" name="gen" id="">Garcon
+                        <input type="radio" name="gen" id="">Fille
+                    </span>
+                </div>
+
+                <div>
+                    <label for="">Date Naissance</label>
+                    <input type="date" name="" id="dN">
+                </div>
+
+                <div>
+                    <label for="">Mot de passe</label>
+                    <input type="password" name="" id="pass">
+                    <input type="button" value="Générer" onclick="Generer();">
+                </div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Tarif mensuel</legend>
+
+                <div>
+                    <label for="">Catégorie</label>
+                    <select name="" id="cat">
+                        <option value="None">Choisir la catégorie</option>
+                        <option value="None">Entre 5 et 7 ans</option>
+                        <option value="None">Entre 8 et 10 ans</option>
+                        <option value="None">Supérieur à 10 ans</option>
+                    </select>
+                    <span>
+                        <label for="">Nb Mois</label>
+                        <input type="range" name="" id="nb" min="1" max="12" value="1">
+                    </span>
+                    <output id="out"></output>
+                </div>
+
+                <div>
+                    <label for="">Montant à payer</label>
+                    <input type="text" name="" id="mon">
+                </div>
+			</fieldset>
+
+            <div>
+                <input type="submit" value="S'inscrire" class="formBtn">
+                <input type="reset" value="Annuler" class="formBtn">
+            </div>
+		</form>
+	</body>
+</html>
